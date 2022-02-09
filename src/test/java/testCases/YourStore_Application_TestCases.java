@@ -39,6 +39,14 @@ public class YourStore_Application_TestCases extends base{
 	}
 	
 	
+	@Test
+	public void Validate_New_Login() {
+		
+		
+	}
+	
+	
+	
 	//Test Case
 	
 	@BeforeMethod
