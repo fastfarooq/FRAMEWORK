@@ -2,9 +2,6 @@ package Resources;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-
-
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
