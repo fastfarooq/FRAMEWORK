@@ -1,0 +1,7 @@
+20:29:43.197 [main] INFO  Resources.base - Test Case - Valdiate_login_Functionality_Blank_data 
+20:29:48.685 [main] INFO  Resources.base - Closed the Browser Successfully
+20:29:50.200 [main] INFO  Resources.base - Browse has be Intialized Successfully
+20:29:56.995 [main] INFO  Resources.base - Launched https://the-internet.herokuapp.com/
+20:29:57.162 [main] INFO  Resources.base - Maximized Window
+20:29:57.164 [main] INFO  Resources.base - Test Case - Validate_Context_Message 
+20:29:59.012 [main] INFO  Resources.base - Closed the browser Successfully
