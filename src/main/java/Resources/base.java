@@ -19,7 +19,7 @@ public class base {
 
 	public WebDriver initializeDriver() throws IOException {
 		prop 					= new Properties();
-		FileInputStream fis 	= new FileInputStream("C:\\Work\\BlueStone_FinalFrameWork-master\\src\\main\\java\\Resources\\property.properties");
+		FileInputStream fis 	= new FileInputStream("C:\\Work\\FRAMEWORK_Bluestone\\src\\main\\java\\Resources\\property.properties");
 		prop.load(fis);
 		String browserName 		= prop.getProperty("browser");
 		
@@ -32,10 +32,9 @@ public class base {
 	
 		else if (browserName.equals("Edge"))
 		{
-		System.setProperty("webdriver.edge.driver", "C:\\WORK_\\Edge\\msedgedriver");  
+		System.setProperty("webdriver.edge.driver", "C:\\Work\\Edge\\msedgedriver");  
 		driver = new InternetExplorerDriver();
-		}
-				
+		}				
 		
 		else
 		{

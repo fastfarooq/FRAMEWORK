@@ -3,13 +3,44 @@ package pageObjectModel;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class FB_Login_Page {
 
 	public WebDriver driver;
+	
 	public FB_Login_Page(WebDriver driver) {
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
+	
+	@FindBy(xpath="//input[@id='email']")
+	private WebElement UserID;
+	public WebElement getUserID() {		
+	return 	UserID;				
+	}
+	
+	@FindBy(xpath="//input[@id='pass']")
+	private WebElement PassWord;
+	
+	
+	@FindBy(xpath="//span[text()='gfsdg Zakir']")
+	private WebElement ZakirName;
+	public WebElement getZakirName() {		
+	return 	ZakirName;				
+	}
+	
+	
+	
+
+	
+	/*public FB_Login_Page(WebDriver driver) {
+		this.driver = driver;
+	
+	}*/
+	
+	
 	
 	By English_lnk		= By.xpath("//a[text()='English (UK)']");
 	By UserName_txtBox 	= By.xpath("//input[@id='email']");	

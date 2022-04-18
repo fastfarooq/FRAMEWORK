@@ -4,6 +4,7 @@ import java.io.IOException;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -22,10 +23,13 @@ public void TestCase_01() throws IOException, InterruptedException
 	log.info("Test Case - Valdiate_login_Functionality_Invalid_data ");
 	FB_Login_Page FbLgnPage = new FB_Login_Page(driver);
 	//FbLgnPage.getEnglish_lnk().click();
-	FbLgnPage.getUserName_txtBox().sendKeys("9642869539");
-	FbLgnPage.getPassWord_txtBox().sendKeys("1626");
+	FbLgnPage.getUserID().sendKeys("9642869539");
+	FbLgnPage.getPassWord_txtBox().sendKeys("Amyrah*212608");
 	FbLgnPage.getlogin_Btn().click();
-	Thread.sleep(3000);
+	Thread.sleep(9000);
+	Assert.assertTrue(FbLgnPage.getZakirName().isDisplayed());
+	
+
 }
 
 

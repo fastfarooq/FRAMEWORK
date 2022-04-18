@@ -34,8 +34,7 @@ public class YourStore_Application_TestCases extends base{
 		RegPage.get_Password_txtBox().sendKeys("test");
 		RegPage.get_ConfirmPassword_txtBox().sendKeys("test");
 		RegPage.get_Policy_chkBox().click();
-		RegPage.get_Continue_Btn().click();	
-			
+		RegPage.get_Continue_Btn().click();				
 	}
 	
 	
