@@ -11,7 +11,7 @@ public class Excel_GetData {
 	
 	String sheetName;
 	String TestCaseName;
-	
+	//Test
 
 	public static void main(String[] args) throws IOException {
 		getExcelData("SeleniumEasy","TCID_04");		
@@ -21,7 +21,7 @@ public class Excel_GetData {
 	
 		
 		//FIS is class in java.. Create fis object that can access and read any file on machine
-		FileInputStream fis 	 = new FileInputStream("C:\\Work\\BlueStone_TestData.xlsx");		
+		FileInputStream fis 	 = new FileInputStream("Location of file -- mean xl file");		
 		XSSFWorkbook 	workBook = new XSSFWorkbook(fis);
 		XSSFSheet 	 	sheet    = workBook.getSheet(sheetName);
 		int 			rowCount = sheet.getLastRowNum()-sheet.getFirstRowNum();
