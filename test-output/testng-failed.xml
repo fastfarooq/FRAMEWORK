@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.FaceBook_Regression_TestCase">
+      <class name="testCases.IPL_ScoreBoard">
         <methods>
-          <include name="TestCase_01"/>
-          <include name="LaunchApp"/>
           <include name="tearDown"/>
+          <include name="TeamNamePoints"/>
+          <include name="LaunchApp"/>
         </methods>
-      </class> <!-- testCases.FaceBook_Regression_TestCase -->
+      </class> <!-- testCases.IPL_ScoreBoard -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
